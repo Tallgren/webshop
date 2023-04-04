@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/pig.png" type="image/x-icon">
+    <title>Order page</title>
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Piggies Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="order.html">Order</a>
+                        <span class="visually-hidden">(current)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="formstyle bg-light">
+        <form name="order-form">
+            <fieldset>
+                <legend>Order</legend>
+
+                <div class="form-group">
+                    <label for="name" class="form-label mt-4">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp"
+                        placeholder="Enter name">
+                    <small id="nameHelp" class="form-text text-muted"></small>
+
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label mt-4">Phone number</label>
+                    <input type="text" class="form-control" name="phone" id="phone" aria-describedby="phoneHelp"
+                        placeholder="Enter phone number">
+                    <small id="phoneHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label mt-4">Email address</label>
+                    <input type="text" class="form-control" name="email" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <br>
+                <div class="addressfields form-group"> Enter address
+                    <div class="row">
+                        <div class="col-sm">
+                            <div>
+                                <label for="street" class="form-label mt-4">Street</label>
+                                <input type="text" class="form-control" name="street" id="street"
+                                    aria-describedby="addressHelp" placeholder="eg. Stockholmsvägen 3">
+                                <small id="streetHelp" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div>
+                                <label for="zip" class="form-label mt-4">Zip code</label>
+                                <input type="text" class="form-control" name="zip" id="zip"
+                                    aria-describedby="addressHelp" placeholder="eg. 123 45">
+                                <small id="zipHelp" class="form-text text-muted"></small>
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="city" class="form-label mt-4">City</label>
+                            <input type="text" class="form-control" name="city" id="city" aria-describedby="addressHelp"
+                                placeholder="ex. Stockholm">
+                            <small id="cityHelp" class="form-text text-muted"></small>
+
+                        </div>
+                    </div>
+                </div>
+
+        </form> <br>
+        <button type="button" class="btn btn-outline-primary" id="submitAddress">Submit</button>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
+        <p class="col-md-4 mb-0 text-muted">© Piggy Company, Inc</p>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link px-2 text-muted">Products</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <script src="order.js"></script>
+</body>
+
+</html>
