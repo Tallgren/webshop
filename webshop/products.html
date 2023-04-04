@@ -27,13 +27,23 @@
           <li class="nav-item">
             <a class="nav-link active" href="products.html">Products</a>
             <span class="visually-hidden">(current)</span>
-
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
-
           </li>
         </ul>
+        <div class="cart">
+          <a href="#" class="cart-icon"><img src="/images/icons8-shopping-cart-48.png"></img></a>
+          <div class="cart-dropdown">
+            
+            
+            <ul class="cart-items"></ul>
+
+            <h6>Total: </h6><div class="cart-total"></div>
+            <a href="#" class="empty-btn">Empty cart</a>
+            <a href="#" class="checkout-btn">Checkout</a>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -65,7 +75,9 @@
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"></script>
     
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="products.js"></script>
+  <script src="cart.js"></script>
 </body>
 
 </html>
