@@ -132,10 +132,10 @@ span {cursor:pointer; }
   top: 100%;
   right: 0;
   min-width: 300px;
-  max-height: 500px;
+  max-height: 520px;
   overflow-y: auto;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1.5px solid #000000;
   padding: 10px;
 }
 
@@ -153,12 +153,13 @@ span {cursor:pointer; }
 
 .cart-dropdown.active {
   display: block;
-  margin-top: 20px;
+  margin-top: 11px;
 }
 
-.cart-items li {
+.cart-items li, ul {
   list-style: none;
   margin: 0;
+  padding-left: 0 !important;
 }
 
 .cart-total {
@@ -184,6 +185,27 @@ span {cursor:pointer; }
   color: #fff;
   padding: 10px;
   text-decoration: none;
+}
+
+.remove-btn {
+  display: block;
+  text-align: center;
+  background-color: #fe0000;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  float: right;
+  margin-right: 10px;
+}
+
+.amount {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item-title {
+  margin-bottom: 2rem;
 }
 
 
