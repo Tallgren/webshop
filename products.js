@@ -50,22 +50,17 @@ function productRender(data) {
 function saveProduct(data) {
   console.log(data);
   let products = JSON.parse(localStorage.getItem('products')) || [];
-
   // Check if product already exists in local storage
   let existingProductIndex = products.findIndex(product => product.id === data.id);
   if (existingProductIndex !== -1) {
     // If product exists, increase the amount-value
     products[existingProductIndex]['amount'] ++;
   } else {
-    // If product doesn't exist, add it to the array
+    // If product doesn't exist, add it to the array and add amount attribute
     data.amount = 1;
     products.push(data);
   }
-
-  // Update local storage with the modified products array
+  // Update local storage
   localStorage.setItem('products', JSON.stringify(products));
-
-  console.log(localStorage);
   updateCart();
-  //open('order.html', '_self');
 }
